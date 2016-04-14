@@ -7,7 +7,7 @@
     sudo apt-get install texlive-latex texlive-latex-recommended texlive-latex-extra rubber pandoc
     ```
 
-1. Update `Makefile` - fill in your name on the first line in a form: `BP_Surname_Name_YEAR`.
+1. Update `Makefile` and `.gitignore` - fill in your name on the first line in a form: `BP_Surname_Name_YEAR`.
 1. Update `header.tex` file.
 
 
