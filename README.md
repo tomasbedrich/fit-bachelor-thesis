@@ -4,7 +4,7 @@
 1. Install dependencies:
 
     ```
-    sudo apt-get install texlive-latex texlive-latex-recommended texlive-latex-extra rubber pandoc
+    sudo apt-get install build-essential texlive-latex texlive-latex-recommended texlive-latex-extra rubber pandoc
     ```
 
 1. Download a program ["vlna" by Petr Olsak](http://petr.olsak.net/ftp/olsak/vlna/vlna.tar.gz), compile it and place an executable `vlna` into this directory.
@@ -20,3 +20,8 @@ Write your text to `chapters/*.md`. Use [Pandoc Markdown](http://rmarkdown.rstud
 ## Citations
 
 Use LaTeX command `\cite{something}` to insert a citation reference. The referenced book must be stored in a `bibliography.bib` file. This file can be generated on [Citacepro.com website](http://www.citacepro.com/) (use "Download as BibTex").
+
+
+# Publishing
+
+Run `make tex` to generate a final PDF: `BP_Surname_Name_YEAR.pdf`. To clean the result, run `make clean`.
