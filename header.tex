@@ -11,6 +11,26 @@
 \usepackage[utf8]{inputenc} % LaTeX source encoded as UTF-8
 
 \usepackage{graphicx} %graphics files inclusion
+
+% image auto scaling, see: http://tex.stackexchange.com/a/160022/102851
+\makeatletter
+\def\ScaleWidthIfNeeded{%
+ \ifdim\Gin@nat@width>\linewidth
+    \linewidth
+  \else
+    \Gin@nat@width
+  \fi
+}
+\def\ScaleHeightIfNeeded{%
+  \ifdim\Gin@nat@height>0.9\textheight
+    0.9\textheight
+  \else
+    \Gin@nat@width
+  \fi
+}
+\makeatother
+\setkeys{Gin}{width=\ScaleWidthIfNeeded,height=\ScaleHeightIfNeeded,keepaspectratio}%
+
 % \usepackage{amsmath} %advanced maths
 % \usepackage{amssymb} %additional math symbols
 
