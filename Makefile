@@ -1,6 +1,6 @@
 filename = BP_Surname_Name_YEAR
 texfile = $(filename).tex
-pandoc_flags = --smart --chapters --to=latex
+pandoc_flags = --template csquotes.tex --standalone --smart --chapters --to=latex
 
 tex:
 	cat header.tex > $(texfile)
